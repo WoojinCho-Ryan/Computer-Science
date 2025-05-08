@@ -47,3 +47,9 @@ You need python
 head = "Python"
 tail = " is fun!"
 head + tail # 'Python is fun!'
+
+# 문자열 곱하기
+a = "python"
+a * 2 # 'pythonpython'
+
+# 문자열 곱하기 응용 : multistring.py
