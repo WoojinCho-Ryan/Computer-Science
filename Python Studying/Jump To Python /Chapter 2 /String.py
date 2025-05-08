@@ -1,0 +1,46 @@
+# 문자열 (string) : 연속된 문자들의 나열.
+"Computer Science"
+"a"
+"123"
+# 큰따옴표(")로 둘러싸여 있으면 모두 문자열.
+
+# 문자열을 만드는 방법은 크게 4가지
+# 1. 큰따옴표로 양쪽 둘러싸기
+"Hello World"
+# 2. 작은따옴표로 양쪽 둘러싸기
+'Python is fun'
+# 3. 큰따옴표 3개를 연속으로 써서 양쪽 둘러싸기
+"""Life is too short, You need python"""
+# 4. 작은따옴표 3개를 연속으로 써서 양쪽 둘러싸기
+'''Life is too short, You need python'''
+
+# 문자열 안에 작은따옴표나 큰따옴표를 포함시키고 싶을 때
+# 1. 문자열에 작은따옴표 포함하기 : 큰따옴표 사용
+food = "Python's favorite food is perl" # 작은따옴표 사용시, SyntaxError 발생
+# 2. 문자열에 큰따옴표 포함하기 : 작은따옴표 사용
+say = '"Python is very easy." he says.'
+# 3. 역슬래시 사용
+food = 'Python\'s favorite food is perl'
+say = "\"Python is very easy.\" he says." # \'와 \" 사용
+
+# 여러 줄인 문자열을 변수에 대입하고 싶을 때
+# 1. Escape Code \n 삽입
+multiline = "Life is too short\nYou need python" #읽기 불편하고, 줄이 길어짐
+# 2. 연속된 작은따옴표 3개 또는 큰따옴표 3개 사용
+multiline='''
+Life is too short
+You need python
+''' # 큰따옴표도 동일하게 됨
+
+# What is Escape Code? : 미리 정의해 둔 '문자 조합'
+# \n : 문자열 내 줄 바꿈
+# \t : 문자열 사이 탭 간격
+# \\ : \ 그대로 표현할 때 사용
+# \r : Carrige Return. 커서를 현재 줄의 가장 앞으로 이동
+# \f : Form Feed. 커서를 현재 줄의 다음 줄로 이동
+# \a : 벨 소리
+# \b : Backspace
+# \000 : Null 문자
+
+# 문자열 연산하기
+
