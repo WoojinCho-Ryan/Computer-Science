@@ -43,4 +43,7 @@ You need python
 # \000 : Null 문자
 
 # 문자열 연산하기
-
+# 문자열 더해서 연결하기
+head = "Python"
+tail = " is fun!"
+head + tail # 'Python is fun!'
