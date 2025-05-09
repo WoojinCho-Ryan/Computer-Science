@@ -71,3 +71,22 @@ a[19:] # 'You need Python'
 a[:17] # 'Life is too short'
 a[:] # 'Life is too short, You need Python'
 a[19:-7] # 'You need' a[19] ~ a[-8]
+
+# Slicing으로 String 나누기
+a = "20230331Rainy"
+year = a[:4]
+day = a[4:8]
+weather = a[8:]
+
+# Pithon 문자열을 Python으로 바꾸려면?
+a = "Pithon"
+a[1] = 'y' # immutable한 자료형이므로, 오류 발생.
+a[:1] + 'y' + a[2:] # 오류 없이 'Python' 출력
+
+# String Formatting : 문자열 안에 어떤 값을 삽입하는 방법
+# 1. 숫자 바로 대입
+"I eat %d apples." % 3 # %d는 '문자열 포맷 코드'
+# 2. 문자열 바로 대입
+"I eat %s apples." % five # %s는 문자열을 넣기 위해서 필요
+# 3. 숫자 값을 나타내는 변수로 대입
+number = 3
