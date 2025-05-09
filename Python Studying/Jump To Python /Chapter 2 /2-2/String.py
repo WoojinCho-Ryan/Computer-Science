@@ -53,3 +53,21 @@ a = "python"
 a * 2 # 'pythonpython'
 
 # 문자열 곱하기 응용 : multistring.py
+
+# 문자열 길이 구하기 : len 함수
+a = "Life is too short"
+len(a) # 17
+
+# String Indexing
+a = "Life is too short, You need Python"
+a[3] # 'e' Python은 숫자를 0부터 셈
+
+# String Indexing 활용하기
+a[-1] # 'n' 뒤에서부터 1번째.
+
+# String Slicing
+a[0:4] # 'Life' 0 <= a < 4 이므로, a[4]는 포함되지 않음
+a[19:] # 'You need Python'
+a[:17] # 'Life is too short'
+a[:] # 'Life is too short, You need Python'
+a[19:-7] # 'You need' a[19] ~ a[-8]
