@@ -90,3 +90,31 @@ a[:1] + 'y' + a[2:] # 오류 없이 'Python' 출력
 "I eat %s apples." % five # %s는 문자열을 넣기 위해서 필요
 # 3. 숫자 값을 나타내는 변수로 대입
 number = 3
+"I eat %d apples." % number # 'I eat 3 apples.'
+# 4. 2개 이상의 값 넣기
+number = 10
+day = "three"
+"I ate %d apples. so I was sick for %s days." % (number, day) # 'I ate 10 apples. so I was sick for three days.'
+
+# 문자열 포맷 코드
+# %s : String
+# %c : Character (문자 1개)
+# %d : Intger
+# %f : floating-point (부동소수)
+# %o : 8진수
+# %x : 16진수
+# %% : Literal %
+
+# 포매팅 연산자 %d와 %를 같이 쓸 때는 %%를 쓴다
+"Error is %d%." % 98 # 오류 발생
+"Error is %d%%." % 98 # 'Error is 98%.'
+
+# 포맷 코드와 숫자 함께 사용하기
+# 1. 정렬과 공백
+"%10s" % "hi" # '        hi' 공백 8개.
+# %10s는 전체 길이가 10개인 문자열 공간에서 대입되는 값을 오른쪽으로 정렬하고, 그 앞의 나머지는 공백으로 남겨두라는 의미
+"%-10sjane." % 'hi' # 'hi        jane.' 공백 8개.
+
+# 2. 소수점 표현하기
+"%0.4f" % 3.42134234 # '3.4213'
+"%10.4f" % 3.42134234 # '   3.4213' 공백 4개. 전체 길이 10개.
