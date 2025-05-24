@@ -174,5 +174,12 @@ a.count('b') # 2
 
 # 위치 알려 주기 1 - find
 a = "Python is the best choice"
-a.find('b') # 14
+a.find('b') # 14 (파이썬은 숫자를 0부터 셈)
 a.find('k') # -1 (찾는 문자 또는 문자열 존재하지 않음)
+
+# 위치 알려 주기 2 - index
+a = "Life is too short"
+a.index('t') # 8
+a.index('k') # 오류 발생.
+
+# 문자열 삽입 - join
