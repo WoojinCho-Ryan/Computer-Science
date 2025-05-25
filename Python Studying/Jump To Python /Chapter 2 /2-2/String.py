@@ -183,3 +183,53 @@ a.index('t') # 8
 a.index('k') # 오류 발생.
 
 # 문자열 삽입 - join
+",".join('abcd') # 'a,b,c,d'
+",".join(['a', 'b', 'c', 'd']) # 'a,b,c,d'
+
+# 소문자를 대문자로 바꾸기 - upper
+a = "hi"
+a.upper() # 'HI'
+
+# 대문자를 소문자로 바꾸기 - lower
+a = "HI"
+a.lower() # 'hi'
+
+# 왼쪽 공백 지우기 - lstrip
+a = " hi "
+a.lstrip() # 'hi '
+
+# 오른쪽 공백 지우기 - rstrip
+a = " hi "
+a.rstrip() # ' hi'
+
+# 양쪽 공백 지우기 - strip
+a = " hi "
+a.strip() # 'hi'
+
+# 문자열 바꾸기 - replace
+a = "Life is too short"
+a.replace("Life", "Your leg")
+'Your leg is too short'
+
+# 문자열 나누기 - split
+a = "Life is too short"
+a.split() # ['Life', 'is', 'too', 'short']
+b = "a:b:c:d"
+b.split(':') # ['a', 'b', 'c', 'd']
+
+# 문자열이 알파벳으로만 구성되어 있는지 확인하기 - isalpha
+s = "Python"
+s.isalpha() # True
+s = "Python3"
+s.isalpha() # False
+s = "Hello World"
+s.isalpha() # False (공백 문자 포함)
+
+# 문자열이 숫자로만 구성되어 있는지 확인하기 - isdigit
+s = "12345"
+s.isdigit() # True
+s = "1234a"
+s.isdigit() # False
+s = "12 34"
+s.isdigit() # False
+
