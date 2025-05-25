@@ -233,3 +233,12 @@ s.isdigit() # False
 s = "12 34"
 s.isdigit() # False
 
+# 문자열이 특정 문자(열)로 시작하는지 확인하기 - startswith
+s = "Life is too short"
+s.startwith("Life") # True
+s.startwith("short") # False
+
+# 문자열이 특정 문자(열)로 끝나는지 확인하기 - endswith
+s = "Life is too short"
+s.endswith("short") # True
+s.endswith("too) # False
